@@ -1,0 +1,20 @@
+Um estilo arquitetural é uma abordagem de projetar e entregar uma aplicação
+Como organizar os componentes responsaveis de uma arquiteturra, como eles
+irão se interagir entre si e quais aspectos tecnológicos irão atender.
+
+Estilos Arquiteturais
+-Arquitetura Monolitica.
+-Arquitetura em camadas.
+-Arquitetura REST(API's).
+-Arquitetura Microsservice.
+-SOA x Microsservices.
+-Plugin Architecture.
+-Client-Server Architecture.
+-Pipes and Filters Architecture.
+
+Padrões Arquiteturais
+São semelhante aos "Design Patterns", mas possuem um escopo diferente.
+São estrategias de alto nível que dizem respeito a componentes de grande escala,
+as propriedades e mecanismos globais de um sistema.
+Um projeto de arquitetura pode conter diversos estilos arquiteturais, e cada estilo
+arquitetural pode utilizar diversos padrões arquiteturais.

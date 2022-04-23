@@ -1,0 +1,5 @@
+Acoplamento: Uma dependência entre um objeto e outro. Quando um muda o outro muda por 
+consequência.
+Coesão: Objetos executando uma única responsabilidade livres de uma dependência direta com outro 
+objeto.
+

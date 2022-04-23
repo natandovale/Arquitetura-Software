@@ -1,0 +1,36 @@
+O que é um código limpo?
+-Simples
+-Direto
+-Eficiente
+-Sem duplicidade
+-Elegante(Design)
+-Feito com cuidado
+-Fácil de ler
+
+Como medir um bom código
+-Linhas de código
+-Número de métodos
+-Número de classes
+-Linhas de código por método
+-Complexidade ciclomática(muitos if's)
+-Número de estrutura de decisão
+
+Como nomear uma classe/Metodo
+-Por que existe?
+-O que faz
+-Como é usado
+
+Boas Práticas
+-Nome de classes devem ser substantivos e não devem conter verbos
+Ex: ClienteRepository
+
+-Nomes de métodos devem conter vervos de preferencia no infinitivo
+Ex:AdicionarCliente
+
+-Não ser generico
+Ex:Processa();(O que?) Calcula();(O que?) 
+
+-Métodos pequenos!! (<=20 linhas)
+-Linha <= 100 caracteres
+-Classes <= 500
+
