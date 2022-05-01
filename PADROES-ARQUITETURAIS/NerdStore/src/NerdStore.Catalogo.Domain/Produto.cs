@@ -1,4 +1,5 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using System;
+using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Catalogo.Domain
 {
@@ -42,21 +43,17 @@ namespace NerdStore.Catalogo.Domain
         public void DebitarEstoque(int quantidade)
         {
             if (quantidade < 0) quantidade *= -1;
-            QuantidadeEstoque -= quantidade;
-        }
-
-        public void AlterarDescricao()
-        {
-            Descricao = descricao;
-        }   
-
-        public void DebitarEstoque(int quantidade)
-        {
-            if(quantidade < 0) quantidade *= -1;
             if (!PossuiEstoque(quantidade)) throw new DomainException("Estoque insuficiente");
             QuantidadeEstoque -= quantidade;
         }
 
+
+        public void AlterarDescricao(string descricao)
+        {
+            Descricao = descricao;
+        }   
+
+        
         public void ReporEstoque(int quantidade)
         {
             QuantidadeEstoque += quantidade;

@@ -1,4 +1,6 @@
-﻿namespace NerdStore.Core.DomainObjects
+﻿using System;
+
+namespace NerdStore.Core.DomainObjects
 {
     public abstract class Entity
     {
