@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using NerdStore.Catalogo.Domain;
 using NerdStore.Core.Data;
 
@@ -17,6 +19,10 @@ namespace NerdStore.Catalogo.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(
+                  e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
+                property.Relational().ColumnType = "varchar(100)";
+
             base.OnModelCreating(modelBuilder);
         }
 
