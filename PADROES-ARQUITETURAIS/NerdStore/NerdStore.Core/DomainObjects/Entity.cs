@@ -2,9 +2,10 @@ using System;
 
 namespace NerdStore.Core.DomainObjects
 {
-    public class Entity
+    public abstract class Entity
     {
         public Guid Id { get; set; }
+        
         protected Entity()
         {
             Id = Guid.NewGuid();

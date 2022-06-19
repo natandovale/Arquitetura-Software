@@ -2,6 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace NerdStore.Core.DomainObjects
 {
+    //AssertionsConcern
     public class Validacoes
     {
         public static void ValidarSeIgual(object object1, object object2, string mensagem)
